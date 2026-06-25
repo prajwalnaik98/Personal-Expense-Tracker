@@ -1,230 +1,104 @@
-\# Personal Expense Tracker
+# Personal Expense Tracker
 
+A beginner Python project that records, saves, and summarises personal expenses using CSV files.
 
+---
 
-A Python application to record, manage, and summarize personal expenses using CSV file handling.
+## What This Project Does
 
+* Adds expense records with date, description, category, and amount
+* Saves all records to a CSV file so data is not lost when the program closes
+* Displays all expenses in a formatted table
+* Shows a category-wise spending summary
+* Finds the highest expense
 
+---
 
-\## Features
+## Concepts Used
 
+* Functions and docstrings
+* File handling with CSV
+* Dictionaries and loops
+* The `datetime` module
+* `os` module for file checks
 
+---
 
-\* Add expense records with date, description, category, and amount
+## How to Run
 
-\* Store expense data in a CSV file
-
-\* Display all recorded expenses in a formatted table
-
-\* Generate a category-wise spending summary
-
-\* Find the highest expense recorded
-
-
-
-\## Technologies Used
-
-
-
-\* Python
-
-\* CSV Module
-
-\* File Handling
-
-\* `datetime`
-
-\* `os`
-
-
-
-\## Concepts Demonstrated
-
-
-
-\* Functions
-
-\* File handling
-
-\* Dictionaries
-
-\* Lists
-
-\* Loops
-
-\* Data processing
-
-\* CSV file operations
-
-
-
-\## How to Run
-
-
-
-\### 1. Clone the repository
-
-
+### Step 1 — Make sure Python is installed
 
 ```bash
+python --version
+```
 
+### Step 2 — Clone or download this repository
+
+```bash
 git clone https://github.com/prajwalnaik98/Personal-Expense-Tracker.git
-
 cd Personal-Expense-Tracker
-
 ```
 
-
-
-\### 2. Run the program
-
-
+### Step 3 — Run the script
 
 ```bash
-
-python expense\_tracker.py
-
+python expense_tracker.py
 ```
 
+### Step 4 — View the output
 
+The program will print a table of expenses, a category summary, and the highest expense. It will also create an `expenses.csv` file in the same folder.
 
-The program automatically creates an `expenses.csv` file if it does not already exist.
+---
 
-
-
-\## Project Structure
-
-
+## Project Structure
 
 ```text
-
 Personal-Expense-Tracker/
-
 │
-
-├── expense\_tracker.py
-
-├── README.md
-
-└── .gitignore
-
+├── expense_tracker.py   # Main Python script
+├── expenses.csv         # Auto-generated when you run the script
+├── README.md            # Project documentation
+└── .gitignore           # Git ignore rules
 ```
 
+---
 
-
-> \*\*Note:\*\* `expenses.csv` is generated automatically when the program runs.
-
-
-
-\## Sample Output
-
-
+## Sample Output
 
 ```text
-
 Added: Groceries | Food | Rs.850.00
-
 Added: Bus pass | Travel | Rs.500.00
-
-
-
-All Expenses
-
-\-------------------------------------------------------
-
-Date         Description        Category     Amount
-
-\-------------------------------------------------------
-
-25-06-2026   Groceries          Food       Rs.850.00
-
-25-06-2026   Bus pass           Travel     Rs.500.00
-
 ...
 
-
+All Expenses
+-------------------------------------------------------
+Date         Description        Category     Amount
+-------------------------------------------------------
+25-06-2026   Groceries          Food       Rs.850.00
+25-06-2026   Bus pass           Travel     Rs.500.00
+...
 
 Summary by Category
-
-\------------------------------
-
+------------------------------
 Food            Rs.1090.00
-
 Travel          Rs. 590.00
-
 Bills           Rs.1899.00
-
 Study           Rs. 120.00
-
-\------------------------------
-
+------------------------------
 Total           Rs.3699.00
 
-
-
 Highest expense: Electricity bill — Rs.1200.00
-
 ```
 
+---
 
+## Customising
 
-\## Customization
-
-
-
-To add your own expenses, edit the `main()` function in `expense\_tracker.py`:
-
-
+Open `expense_tracker.py` and edit the `main()` function to add your own expenses:
 
 ```python
-
-add\_expense("Your item", "Category", amount)
-
+add_expense("Your item", "Category", amount)
 ```
 
-
-
-You can use categories such as:
-
-
-
-\* Food
-
-\* Travel
-
-\* Bills
-
-\* Study
-
-\* Other
-
-
-
-Or create your own categories.
-
-
-
-\## Future Improvements
-
-
-
-\* Menu-driven interface
-
-\* Search expenses by category
-
-\* Filter expenses by date
-
-\* Monthly expense reports
-
-\* Charts and visualizations using Matplotlib
-
-
-
-\## Author
-
-
-
-\*\*Prajwal Naik\*\*
-
-
-
+Valid categories: **Food, Travel, Bills, Study, Other** — or create your own.
