@@ -10,15 +10,15 @@ A Python application to record, manage, and summarize personal expenses using CS
 
 
 
-\- Add expense records
+\* Add expense records with date, description, category, and amount
 
-\- Store expenses in a CSV file
+\* Store expense data in a CSV file
 
-\- Display all expenses
+\* Display all recorded expenses in a formatted table
 
-\- Show category-wise spending summary
+\* Generate a category-wise spending summary
 
-\- Find the highest expense
+\* Find the highest expense recorded
 
 
 
@@ -26,15 +26,35 @@ A Python application to record, manage, and summarize personal expenses using CS
 
 
 
-\- Python
+\* Python
 
-\- CSV
+\* CSV Module
 
-\- File Handling
+\* File Handling
 
-\- datetime
+\* `datetime`
 
-\- os
+\* `os`
+
+
+
+\## Concepts Demonstrated
+
+
+
+\* Functions
+
+\* File handling
+
+\* Dictionaries
+
+\* Lists
+
+\* Loops
+
+\* Data processing
+
+\* CSV file operations
 
 
 
@@ -42,9 +62,21 @@ A Python application to record, manage, and summarize personal expenses using CS
 
 
 
-1\. Make sure Python is installed.
+\### 1. Clone the repository
 
-2\. Run the following command:
+
+
+```bash
+
+git clone https://github.com/prajwalnaik98/Personal-Expense-Tracker.git
+
+cd Personal-Expense-Tracker
+
+```
+
+
+
+\### 2. Run the program
 
 
 
@@ -56,7 +88,7 @@ python expense\_tracker.py
 
 
 
-The program will automatically create an `expenses.csv` file if it does not exist.
+The program automatically creates an `expenses.csv` file if it does not already exist.
 
 
 
@@ -64,9 +96,11 @@ The program will automatically create an `expenses.csv` file if it does not exis
 
 
 
-```
+```text
 
 Personal-Expense-Tracker/
+
+│
 
 ├── expense\_tracker.py
 
@@ -75,4 +109,122 @@ Personal-Expense-Tracker/
 └── .gitignore
 
 ```
+
+
+
+> \*\*Note:\*\* `expenses.csv` is generated automatically when the program runs.
+
+
+
+\## Sample Output
+
+
+
+```text
+
+Added: Groceries | Food | Rs.850.00
+
+Added: Bus pass | Travel | Rs.500.00
+
+
+
+All Expenses
+
+\-------------------------------------------------------
+
+Date         Description        Category     Amount
+
+\-------------------------------------------------------
+
+25-06-2026   Groceries          Food       Rs.850.00
+
+25-06-2026   Bus pass           Travel     Rs.500.00
+
+...
+
+
+
+Summary by Category
+
+\------------------------------
+
+Food            Rs.1090.00
+
+Travel          Rs. 590.00
+
+Bills           Rs.1899.00
+
+Study           Rs. 120.00
+
+\------------------------------
+
+Total           Rs.3699.00
+
+
+
+Highest expense: Electricity bill — Rs.1200.00
+
+```
+
+
+
+\## Customization
+
+
+
+To add your own expenses, edit the `main()` function in `expense\_tracker.py`:
+
+
+
+```python
+
+add\_expense("Your item", "Category", amount)
+
+```
+
+
+
+You can use categories such as:
+
+
+
+\* Food
+
+\* Travel
+
+\* Bills
+
+\* Study
+
+\* Other
+
+
+
+Or create your own categories.
+
+
+
+\## Future Improvements
+
+
+
+\* Menu-driven interface
+
+\* Search expenses by category
+
+\* Filter expenses by date
+
+\* Monthly expense reports
+
+\* Charts and visualizations using Matplotlib
+
+
+
+\## Author
+
+
+
+\*\*Prajwal Naik\*\*
+
+
 
